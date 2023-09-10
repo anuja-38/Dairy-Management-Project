@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="salaryset" targetNamespace="http://tempuri.org/salaryset.xsd" xmlns:mstns="http://tempuri.org/salaryset.xsd" xmlns="http://tempuri.org/salaryset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AccountMstgv" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AccountMstgv (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DairyManagment.Properties.Settings.GlobalReference.Default.AccountMstgv" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="salaryset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="salaryset" msprop:Generator_UserDSName="salaryset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Salarydb1" msprop:Generator_TableClassName="Salarydb1DataTable" msprop:Generator_TableVarName="tableSalarydb1" msprop:Generator_TablePropName="Salarydb1" msprop:Generator_RowDeletingName="Salarydb1RowDeleting" msprop:Generator_RowChangingName="Salarydb1RowChanging" msprop:Generator_RowEvHandlerName="Salarydb1RowChangeEventHandler" msprop:Generator_RowDeletedName="Salarydb1RowDeleted" msprop:Generator_UserTableName="Salarydb1" msprop:Generator_RowChangedName="Salarydb1RowChanged" msprop:Generator_RowEvArgName="Salarydb1RowChangeEvent" msprop:Generator_RowClassName="Salarydb1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnSID" msprop:Generator_ColumnPropNameInRow="SID" msprop:Generator_ColumnPropNameInTable="SIDColumn" msprop:Generator_UserColumnName="SID" type="xs:int" />
+              <xs:element name="AID" msprop:Generator_ColumnVarNameInTable="columnAID" msprop:Generator_ColumnPropNameInRow="AID" msprop:Generator_ColumnPropNameInTable="AIDColumn" msprop:Generator_UserColumnName="AID" type="xs:int" minOccurs="0" />
+              <xs:element name="fname" msprop:Generator_ColumnVarNameInTable="columnfname" msprop:Generator_ColumnPropNameInRow="fname" msprop:Generator_ColumnPropNameInTable="fnameColumn" msprop:Generator_UserColumnName="fname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lname" msprop:Generator_ColumnVarNameInTable="columnlname" msprop:Generator_ColumnPropNameInRow="lname" msprop:Generator_ColumnPropNameInTable="lnameColumn" msprop:Generator_UserColumnName="lname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cattle" msprop:Generator_ColumnVarNameInTable="columncattle" msprop:Generator_ColumnPropNameInRow="cattle" msprop:Generator_ColumnPropNameInTable="cattleColumn" msprop:Generator_UserColumnName="cattle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tliter" msprop:Generator_ColumnVarNameInTable="columntliter" msprop:Generator_ColumnPropNameInRow="tliter" msprop:Generator_ColumnPropNameInTable="tliterColumn" msprop:Generator_UserColumnName="tliter" type="xs:double" minOccurs="0" />
+              <xs:element name="tprice" msprop:Generator_ColumnVarNameInTable="columntprice" msprop:Generator_ColumnPropNameInRow="tprice" msprop:Generator_ColumnPropNameInTable="tpriceColumn" msprop:Generator_UserColumnName="tprice" type="xs:double" minOccurs="0" />
+              <xs:element name="fromdate" msprop:Generator_ColumnVarNameInTable="columnfromdate" msprop:Generator_ColumnPropNameInRow="fromdate" msprop:Generator_ColumnPropNameInTable="fromdateColumn" msprop:Generator_UserColumnName="fromdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="todate" msprop:Generator_ColumnVarNameInTable="columntodate" msprop:Generator_ColumnPropNameInRow="todate" msprop:Generator_ColumnPropNameInTable="todateColumn" msprop:Generator_UserColumnName="todate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pdate" msprop:Generator_ColumnVarNameInTable="columnpdate" msprop:Generator_ColumnPropNameInRow="pdate" msprop:Generator_ColumnPropNameInTable="pdateColumn" msprop:Generator_UserColumnName="pdate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
